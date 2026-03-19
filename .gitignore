@@ -1,0 +1,110 @@
+# =========================================
+# Xilinx Vivado (multi-project repo version)
+# =========================================
+
+# -----------------
+# General junk
+# -----------------
+**/*.jou
+**/*.log
+**/*.debug
+**/*.str
+**/*.tmp
+**/*.zip
+**/*.rst
+**/*.os
+**/*.pb
+**/*.dcp
+**/*.hwdef
+**/*.vds
+**/*.veo
+**/*.wdf
+**/*.vdi
+**/*.dmp
+**/*.rpx
+**/*.rpt
+
+# Auto-generated HDL
+**/*_stub.v
+**/*_stub.vhdl
+**/*_funcsim.v
+**/*_funcsim.vhdl
+
+# Project metadata
+**/.project
+
+# -----------------
+# Vivado directories (generated)
+# -----------------
+**/.Xil/
+**/*.cache/
+**/.metadata/
+**/*.data/
+**/*.ipdefs/
+**/*.sdk/
+**/*.hw/
+**/*.ip_user_files/
+**/.jobs/
+
+# Simulation
+**/xsim.dir/
+
+# -----------------
+# Runs (synthesis & implementation)
+# -----------------
+**/*.runs/
+
+# Keep only useful reports
+!**/*.runs/**/*utilization*.rpt
+
+# -----------------
+# Block design generated content
+# -----------------
+**/bd/*/hdl/
+**/bd/*/ip/*/
+**/bd/*/hw_handoff/
+
+# -----------------
+# IP shared data
+# -----------------
+**/ipshared/
+
+# -----------------
+# SDK / exported stuff
+# -----------------
+**/*.c
+**/*.h
+**/*.html
+**/*.vho
+
+# -----------------
+# OS / editor junk
+# -----------------
+.DS_Store
+Thumbs.db
+.vscode/
+
+# =========================================
+# IMPORTANT: Keep actual design sources
+# =========================================
+
+# Vivado project files
+!**/*.xpr
+
+# HDL sources
+!**/*.v
+!**/*.sv
+!**/*.vhd
+
+# Constraints
+!**/*.xdc
+
+# Block design definitions (important!)
+!**/*.bd
+
+# Tcl scripts (for reproducibility)
+!**/*.tcl
+
+# Allow important reports if desired
+!**/*timing_summary*.rpt
+!**/*utilization*.rpt
